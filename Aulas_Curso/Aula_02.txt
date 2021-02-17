@@ -1,0 +1,33 @@
+Criador do Python:
+Guido Van Gossum, ano 1982
+ -> Guido Van Gossum, trabalhou no Google até 2013, e hoje trabalha na DropBox
+- As pessoas começaram a utilizar com mais demanda em 1995
+- 2001 Python Software Foundation - Mantedora
+- Sistemas em Python: Amiga, NetBSD, MACOS, Linux, RaspberryPI
+
+
+Python é uma linguagem de propósito geral:
+- Fácil e intuitiva
+- Multiplataforma
+- Batteries included
+- Código Livre
+- Organizada
+- Orientada a objeto
+- Repleto de bibliotecas
+
+Onde eu aplico o Python:
+- Inteligência Artificial
+- Biotecnologia
+- Computação 3D
+
+Quem usa Python:
+- Zope
+- Air Canada
+- BitTorrent
+- Globo
+- Google
+- Youtube
+- Nasa
+- Industrial Light & Magic
+
+

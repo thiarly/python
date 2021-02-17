@@ -1,0 +1,20 @@
+Manipulando Texto
+
+len(frase) -> Quantas letras
+frase.count('o') -> quantas letras o
+frase.find('deo') -> vai mostrar em qual posição tem a frase deo
+frase.find('Android') -> Se n tiver a palavra, retorna -1
+'Curso' in frase -> Se tiver a str em frase retorna True se n False
+frase.replace('Python,'Android') -> Substituiria o Python por Android
+frase.upper() -> Alterar de minuscula para maiscula
+frase.lower()-> Vai alterar maiscula para minusculaf
+frase.capitalize()-> Vai modificar todas as letras para minuscula e apenas a 1º letra maiscula
+frase.title()-> Vai alterar para maiscula todos as letras q iniciam as palavras
+Frase.strip() -> Vai remover os espaços inuteis
+Frase.rstrip() -> Vai remover os espaços inuteis da direita
+Frase.lstrip() -> Vai remover os espaços inuteis da esquerda
+frase.split() -> vai transformar uma string em lista
+'-'.join(frase) -> fazer adicionar o - entre as palavras
+
+
+(Curso em Video Python)

@@ -1,0 +1,31 @@
+Code.org -> Organização financeira.
+
+#Todos nesse País deveriam aprender a programar, pois isso nos ensina a pensar. "Steve Jobs"
+
+Vantagens dos Programadores:
+- Resolve problemas mais rápido
+- Mais criativo
+- Espirito de comunidade
+- Aprende as coisas mais rápido
+
+Pré-requisitos:
+- Matematica
+- Raciocinio
+
+Maiores Obstáculos:
+- Falta de compromisso
+- Excesso de pressa
+- Poucos exercicios práticos
+- Não Valorizar a base
+- Achar que já sabe tudo
+
+Principais Profissionais:
+- Desktop
+- Web
+- Mobile
+- Iot -> Sistemas embarcados em pequenos aparelhos
+- Games
+
+Linguagem de programção:
+- java, C++, PHP, Ruby, Swift, ASP, JS, Python
+

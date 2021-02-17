@@ -1,0 +1,23 @@
+#OPERAÇÕES ARITIMETRICAS:
+
+#Operadores aritimétricos:
+
++ = Adição
+- = Subtração
+* = Multiplicação
+/ = Divisão
+** = Potência
+// Divisão inteira
+% = Resto da Divisão
+
+------------------------------------------
+
+#ORDEM DE PRECEDÊNCIA:
+
+1: ()
+2: **
+3: * / // %
+4: + - 
+
+
+
