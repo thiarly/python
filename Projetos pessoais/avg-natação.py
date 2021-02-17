@@ -31,9 +31,3 @@ print (emoji.emojize(':smiley: :smiling_imp:', use_aliases=True))
 
 
 
-
-
-
-
-
-
