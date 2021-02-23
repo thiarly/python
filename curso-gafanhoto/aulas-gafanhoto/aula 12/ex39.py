@@ -4,3 +4,9 @@
 # Se já passou do tempo do alistamento.
 
 #Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
+
+
+#IDADE PARA SE ALISTAR AOS 18 ANOS.
+
+ano = float(input('Digite o ano de nascimento: '))
+
