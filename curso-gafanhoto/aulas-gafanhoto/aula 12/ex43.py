@@ -21,17 +21,24 @@ c = peso / (altura ** 2)
 # indice de massa corporal
 #################################################
 
-# MASCULINO
+
+print ('Nome: {}.'.format(nome))
+print ('Sexo: {}.'.format(sexo))
+print ('Peso: {}.'.format(peso))
+print ('Altura: {}.'.format(altura))
+
 if c <= 18.5:
-    print('Status do IMC {:.1f}, MAGREZA - GRAU 0. '.format(c))
+    print('Resultado do IMC {:.1f}, MAGREZA - GRAU 0. '.format(c))
 elif c <= 24.9:
-    print('Status do IMC {:.1f}, NORMAL - GRAU 0. '.format(c))
+    print('Resultado do IMC {:.1f}, NORMAL - GRAU 0. '.format(c))
 elif c <= 29.9:
-    print('Status do IMC {:.1f}, SOBREPESO - GRAU I. '.format(c))
+    print('Resultado do IMC {:.1f}, SOBREPESO - GRAU I. '.format(c))
 elif c <= 39.9:
-    print('Status do IMC {:.1f}, OBESIDADE - GRAU II.'.format(c))
+    print('Resultado do IMC {:.1f}, OBESIDADE - GRAU II.'.format(c))
 elif c <= 40:
-    print('Status do IMC {:.1f}, OBESIDADE GRAVE - GRAU III. '.format(c))
+    print('Resultado do IMC {:.1f}, OBESIDADE GRAVE - GRAU III. '.format(c))
+
+
 
 
 
