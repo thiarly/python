@@ -8,14 +8,27 @@
 
 #IDADE PARA SE ALISTAR AOS 18 ANOS.
 
+from datetime import date
+atual = date.today().year
+
 nome = str(input('Digite seu nome: '))
 ano = float(input('Digite o ano de nascimento: '))
 
-c = 2021 - ano
+idade = atual - ano
+print('Quem nasceu em {:.0f} tem {} anos em {}'.format(ano, idade, atual))
 
-if c < 18:
-    print('{}, você ainda não está com a idade para alistamento no serviço militar.'.format(nome))
-elif c == 18:
-    print('{}, você está no periodo de alistamento no serviço militar.'.format(nome))
+
+#c = 2021 - ano
+
+if idade == 18:
+    print('{}, você precisa se alistar imediatamente.'.format(nome))
+elif idade < 18:
+    saldo = 18 - idade
+    print('{}, ainda falta {:.0f} anos para o alistamento.'.format(nome, saldo))
+    a = atual + saldo
+    print ('Seu alistamento será em {:.0f} anos.'.format(a))
 else:
-    print('{}, você já passou do tempo de alistamento no serviço militar.'.format(nome))
+    saldo = idade - 18
+    print('{}, você já deveria ter se alistado a {:.0f} anos.'.format(nome, saldo))
+    a = atual - saldo
+    print ('Seu alistamento foi em {:.0f} anos.'.format(a))
