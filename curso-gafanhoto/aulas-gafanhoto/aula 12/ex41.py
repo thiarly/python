@@ -7,10 +7,13 @@
 # até 20 anos: SÊNIOR
 # acima: MASTER
 
-nome = str(input('Digite seu nome: '))
-ano = int(input('Digite seu ano de nascimento: '))
 
-c = 2021 - ano
+from datetime import date
+atual = date.today().year
+nome = str(input('Digite seu nome: '))
+nascimento = int(input('Digite seu ano de nascimento: '))
+
+c = atual - nascimento
 
 if c <= 9:
     print('{}, você está na categoria: MIRIM.'.format(nome))

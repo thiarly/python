@@ -4,41 +4,47 @@
 #Em até 2x no cartão: preço normal
 #3x ou mais no cartão: 20% de juros
 
-print ('Qual a forma de pagamento que deseja? ')
-print ('1. Dinheiro ')
-print ('2. Cheque ')
-print ('3. À vista no cartão. ')
-print ('4. Em até 2x cartão ')
-print ('5. 3x ou mais no cartão')
+print('{:=^40}'.format(' LOJAS CANUDOS BAHIA '))
 
 
-c = int(input('Informe a condição de pagamento: '))
+preço = float(input('Preço das compras: R$ '))
 
-#dinheiro = 1
-#cheque = 2
-#vista = 3
-#cartaov = 4
-#cartaop = 5
+print (''' FORMAS DE PAGAMENTO
+[ 1 ]. Dinheiro ')
+[ 2 ]. Cheque ')
+[ 3 ]. À vista no cartão
+[ 4 ]. Em até 2x cartão
+[ 5 ]. 3x ou mais no cartão''')
 
-print (c)
+c = int(input('Qual é a opção? '))
+
 
 
 if c == 1:
-    print('Você tem um desconto de 10%')
+    total = preço - (preço * 10 / 100)
+    print ('Compra no dinheiro tem desconto de 10%. Valor total R$ {:.2f} e valor com desconto {:.2f}'.format(preço, total))
 
 elif c == 2:
-    print('Você tem um desconto de 10%')
+    total = preço - (preço * 10 / 100)
+    print ('Compra no cheque tem desconto de 10%. Valor total R$ {:.2f} e valor com desconto {:.2f}'.format(preço, total))
 
 elif c == 3:
-    print('Você tem 5% de desconto')
+    total = preço - (preço * 5 / 100)
+    print ('Compra no cartão a vista tem desconto de 5%. Valor total R$ {:.2f} e valor com desconto {:.2f}'.format(preço, total))
 
 elif c == 4:
-    print('Você pode parcelar em até 2x no cartão sem juros')
+    total = preço
+    parcela = total / 2
+    print('Sua compra será parcelada em 2x de R$ {:.2f} SEM JUROS.'.format(parcela))
 
 elif c == 5:
-    print ('Parcelar acima de 3x no cartão acrescenta 20% de juros ')
-
+    total = preço + (preço * 20 / 100)
+    totaparc = int(input('Quantas parcelas? '))
+    parcela = total / totaparc
+    print ('Sua comrpa será parcelada em {}x de R$ {:.2f} COM JUROS'.format(totaparc, parcela))
+    print ('Valor total da compra {:.2f}'.format(total))
 else:
+    total = preço
     print ('Forma de pagamento não existe! ')
 
 

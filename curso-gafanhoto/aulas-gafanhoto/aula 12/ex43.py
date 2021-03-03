@@ -9,10 +9,10 @@
 
 nome = str(input('Digite o seu nome: '))
 sexo = str(input('Digite o seu Sexo: '))
-peso = float(input('Digite o seu peso atual: '))
-altura = float(input('Digite a sua altura: '))
+peso = float(input('Qual o seu peso atual: (Kg) '))
+altura = float(input('Digite a sua altura: (m)'))
 
-c = peso / (altura ** 2)
+imc = peso / (altura ** 2)
 
 #################################################
 #c = peso / d
@@ -27,16 +27,16 @@ print ('Sexo: {}.'.format(sexo))
 print ('Peso: {}.'.format(peso))
 print ('Altura: {}.'.format(altura))
 
-if c <= 18.5:
-    print('Resultado do IMC {:.1f}, MAGREZA - GRAU 0. '.format(c))
-elif c <= 24.9:
-    print('Resultado do IMC {:.1f}, NORMAL - GRAU 0. '.format(c))
-elif c <= 29.9:
-    print('Resultado do IMC {:.1f}, SOBREPESO - GRAU I. '.format(c))
-elif c <= 39.9:
-    print('Resultado do IMC {:.1f}, OBESIDADE - GRAU II.'.format(c))
-elif c <= 40:
-    print('Resultado do IMC {:.1f}, OBESIDADE GRAVE - GRAU III. '.format(c))
+if imc <= 18.5:
+    print('Resultado do IMC {:.1f}, MAGREZA - GRAU 0. '.format(imc))
+elif imc <= 24.9:
+    print('Resultado do IMC {:.1f}, NORMAL - GRAU 0. '.format(imc))
+elif imc <= 29.9:
+    print('Resultado do IMC {:.1f}, SOBREPESO - GRAU I. '.format(imc))
+elif imc <= 39.9:
+    print('Resultado do IMC {:.1f}, OBESIDADE - GRAU II.'.format(imc))
+elif imc <= 40:
+    print('Resultado do IMC {:.1f}, OBESIDADE GRAVE - GRAU III. '.format(imc))
 
 
 
