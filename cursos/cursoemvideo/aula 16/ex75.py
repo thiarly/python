@@ -9,9 +9,9 @@ C - Quais foram os números pares.
 
 
 num = (int(input('Digite um número: ')),
-        int(input('Digite outro número: ')),
-        int(input('Digite mais um número: ')),
-        int(input('Digite o último número: ')))
+    int(input('Digite outro número: ')),
+    int(input('Digite mais um número: ')),
+    int(input('Digite o último número: ')))
 
 print (f'Os números digitados foram: {num}')
 print (f'O valor nove apareceu {num.count(9)} vezes.')
@@ -23,6 +23,9 @@ print ('Os valores pares digitados foram: ',end='')
 for n in num:
     if n % 2 == 0:
         print (n, end=' ')
+
+print ('\nAté mais, volte sempre!')
+
     
 
 
