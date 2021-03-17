@@ -20,7 +20,7 @@ print (dados)
 print(pessoas)
 """
 """
-galera = [['Thiarly', 30], ['Laila', 33], ['Clara', 1], ['Lucas', 0.5]]
+galera = [['Carlo', 30], ['Adalto', 33], ['Jose', 1], ['Maria', 0.5]]
 print (galera[3][0])
 
 for pessoa in galera:
