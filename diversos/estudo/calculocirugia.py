@@ -1,3 +1,19 @@
+print ('CALCULO DE GASTO PÓS CIRUGIA')
+print ()
+cont = 0
+
+while True:
+    soma = float(input('Digite o valor: R$ '))
+    resp = str(input('Quer adicionar mais valor? [S/N]: ')).strip().upper()[0]
+    cont = cont + soma
+    if  resp in "Nn":
+        break
+resul = cont
+
+print (f' Valor total R$ {resul:.2f}')
+
+
+"""
 print ('\033[1;96m<<< CUSTO PÓS CIRUGIA DO SEPTO >>>\033[m')
 print ()
 print ('⬇'*50)
@@ -39,4 +55,4 @@ p = 35.59
 resultado = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p
 
 print (f'\033[1;92mValor total para o tratamento pós cirugia:\033[m \033[1;31m{resultado}\033[m')
-
+"""
