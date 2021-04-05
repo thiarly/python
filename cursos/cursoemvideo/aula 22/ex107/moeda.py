@@ -19,3 +19,7 @@ def dobro(preço):
 def metade(preço):
     res = preço / 2
     return res
+
+def multiplicar (preço):
+    res = preço * 10
+    return res
