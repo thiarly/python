@@ -31,3 +31,5 @@ def resumo(preço = 0, taxaa = 10, taxar = 5):
      print(f'{taxaa}% de aumento: \t{aumentar(preço, taxaa, True)}')
      print(f'{taxar}% de redução: \t{diminuir(preço, taxar, True)}')
      print('-' * 30)
+
+
