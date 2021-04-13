@@ -3,8 +3,8 @@ Crie um pequeno sistema modularizado que permita cadastrar pelo seu nome e idade
 O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.
 """
 
-from interface import lib
-from interface import arquivo
+from lib import lib
+from lib import arquivo
 from time import sleep
 
 arq = 'cursoemvideo.txt'

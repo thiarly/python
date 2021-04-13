@@ -1,4 +1,4 @@
-from lib import arquivo
+from aula23 import interface
 
 
 
