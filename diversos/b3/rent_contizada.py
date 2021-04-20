@@ -53,15 +53,16 @@ for i, data in enumerate(aportes.index):
             carteira.at[data, 'vl_cota'] = carteira.iloc[i]['saldo'] / carteira.at[data, 'qtd_cotas']
             carteira.at[data, 'retorno'] = (carteira.iloc[i]['vl_cota'] / carteira.iloc[i-1]['vl_cota']) - 1
 
+plt.plot(carteira["vl_cota"])
+plt.show()
 
-
-carteira['vl_cota'].plot()
 
 """
+carteira['vl_cota'].plot()
+#plt.plot(x["idade"])
 #plt.hist(x["idade"])
 #plt.hist(x["idade"],bins=20)
 plt.pie(x["idade"], labels= x["nome"],autopct="%1.2f%%")
-
 plt.show()
 """
 
