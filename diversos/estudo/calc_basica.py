@@ -1,25 +1,41 @@
+from time import sleep
 
+print('-'*40)
+print ('\033[1;33mBEM VINDO A CALCULADORA BÁSICA\033[m')
+print('-'*40)
 
+sleep(2)
+print()
 
-operacao = input('Qual a operção (+,-,*,/) você quer fazer? ')
-num1 = float(input('Digite o primeiro número: '))
-num2 = float(input('Digite o primeirosegundo número: '))
+num1 = float(input('\033[1;32mDigite o primeiro número:\033[m '))
 
-if operacao == '+':
-    total = num1 + num2
-    print (total)
+while True:
+    operacao = str(input('Qual operação deseja executar? (+, * , - ou /): -> '))
+    if operacao not in '+*-/':
+        print('\033[1;31mOpção inválida, tente novamente, as opções disponíveis são: (+,*,-,/)\033[m')
+        break
 
-elif operacao == '-':
-    total = num1 = num2
-    print (total)
+    num2 = float(input('\033[1;32mDigite o segundo número:\033[m '))
 
-elif operacao == '*':
-    total = num1 * num2
-    print (total)
+    if operacao == '+':
+        total = num1 + num2
+        print(f'\033[1;34m{num1} + {num2} é = {total}\033[m')
+        break
 
-else:
-    if operacao == '/':
+    elif operacao == '*':
+        total = num1 * num2
+        print(f'\033[1;34m{num1} * {num2} é = {total}\033[m')
+        break
+
+    elif operacao == '-':
+        total = num1 - num2
+        print(f'\033[1;34m{num1} - {num2} é = {total}\033[m')
+        break
+
+    elif operacao == '/':
         total = num1 / num2
-        print (total)
+        print(f'\033[1;34m{num1} / {num2} é = {total}\033[m')
+        break
 
-        
+
+
