@@ -1,0 +1,23 @@
+math.ceil(x)¶
+Retorna o teto de x, o menor inteiro maior ou igual a x. Se x não for um ponto flutuante, delega para x.__ceil__(), que deve retornar um valor de Integral.
+math.comb(n, k)¶
+Retorna o número de maneiras de escolher k itens de n itens sem repetição e sem ordem.
+Avalia para n! / (k! * (n - k)!) quando k <= n e avalia para zero quando k > n.
+Também chamado de coeficiente binomial porque é equivalente ao coeficiente do k-ésimo termo na expansão polinomial da expressão (1 + x) ** n.
+Levanta TypeError se algum dos argumentos não for inteiro. Levanta ValueError se algum dos argumentos for negativo.
+Novo na versão 3.8.
+math.copysign(x, y)¶
+Retorna um ponto flutuante com a magnitude (valor absoluto) de x, mas o sinal de y. Em plataformas que suportam zeros sem sinal, copysign(1.0, -0.0) retorna -1.0.
+math.fabs(x)¶
+Retorna o valor absoluto de x.
+math.factorial(x)¶
+Retorna x fatorial como um inteiro. Levanta ValueError se x não for integral ou for negativo.
+Obsoleto desde a versão 3.9: Aceitar pontos flutuantes com valores integrais (como 5.0) foi descontinuado.
+math.floor(x)¶
+Retorna o piso de x, o maior inteiro menor ou igual a x. Se x não for um ponto flutuante, delega para x.__floor__(), que deve retornar um valor de Integral.
+math.fmod(x, y)¶
+Retorna fmod(x, y), conforme definido pela biblioteca C da plataforma. Observe que a expressão Python x % y pode não retornar o mesmo resultado. A intenção do padrão C é que fmod(x, y) seja exatamente (matematicamente; com precisão infinita) igual a x - n*y para algum inteiro n de modo que o resultado tenha o mesmo sinal que x e magnitude menor que abs(y). O x % y do Python retorna um resultado com o sinal de y, e pode não ser exatamente computável para argumentos de ponto flutuante. Por exemplo, fmod(-1e-100, 1e100) é -1e-100, mas o resultado de -1e-100 % 1e100 do Python é 1e100-1e-100, que não pode ser representado exatamente como um ponto flutuante, e é arredondado para o surpreendente 1e100. Por esta razão, a função fmod() é geralmente preferida ao trabalhar com pontos flutuantes, enquanto o x % y do Python é preferido ao trabalhar com inteiros.
+math.frexp(x)¶
+Retorna a mantissa e o expoente de x como o par (m, e). m é um ponto flutuante e e é um inteiro tal que x == m * 2**e exatamente. Se x for zero, retorna (0.0, 0), caso contrário, 0.5 <= abs(m) < 1. Isso é usado para “separar” a representação interna de um ponto flutuante de forma portátil.
+math.fsum(iterable)¶
+Retorna uma soma de valores de ponto flutuante precisa no iterável. Evita perda de precisão rastreando várias somas parciais intermediárias:
