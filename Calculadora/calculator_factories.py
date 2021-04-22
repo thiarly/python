@@ -10,18 +10,18 @@ def make_root() -> tk.Tk:
     return root
 
 
-def make_label(root, **grid_options) -> tk.Label:
+def make_label(root) -> tk.Label:
     label = tk.Label(
         root, text='Sem conta ainda',
         anchor='e', justify='right', background='#fff'
     )
-    label.grid(**grid_options)
+    label.grid(row=0, column=0, columnspan=5, sticky='news')
     return label
 
 
-def make_display(root, **grid_options) -> tk.Entry:
+def make_display(root) -> tk.Entry:
     display = tk.Entry(root)
-    display.grid(**grid_options)
+    display.grid(row=1, column=0, columnspan=5, sticky='news', pady=(0, 10))
     display.config(
         font=('Helvetica', 40, 'bold'),
         justify='right', bd=1, relief='flat',
@@ -50,7 +50,7 @@ def make_button(root, text, **grid_options) -> tk.Button:
     return btn
 
 
-def make_buttons(root, starting_row) -> List[List[tk.Button]]:
+def make_buttons(root) -> List[List[tk.Button]]:
     button_texts: List[List[str]] = [
         ['7', '8', '9', '+', 'C'],
         ['4', '5', '6', '-', '/'],
@@ -59,7 +59,32 @@ def make_buttons(root, starting_row) -> List[List[tk.Button]]:
     ]
 
     buttons: List[List[tk.Button]] = []
+    
+    for row, row_value  in enumerate (button_texts, start=2):
+        button_row = []
+        for col_index, col_value in enumerate(row_value):
+            btn = tk.Button(root, text=col_value)
+            btn.grid(row=row, column=col_index, sticky='news', padx=5, pady=5)
+            btn.config(
+                font=('Helvetica', 15, 'normal'),
+                pady=40, width=1, background='#f1f2f3', bd=0,
+                cursor='hand2', highlightthickness=0,
+                highlightcolor='#ccc', activebackground='#ccc',
+                highlightbackground='#ccc'
+            )
+            button_row.append(btn)
+        buttons.append(button_row)
+    return buttons
 
+
+
+
+
+
+
+
+
+"""
     for row, row_value in enumerate(button_texts, start=starting_row):
         button_row = []
         for col_index, col_value in enumerate(row_value):
@@ -70,3 +95,4 @@ def make_buttons(root, starting_row) -> List[List[tk.Button]]:
             button_row.append(btn)
         buttons.append(button_row)
     return buttons
+"""
