@@ -8,7 +8,7 @@
 
 #PARAMETROS OPCIONAIS
 def somar (a, b=0, c=0):
-    s = b + c
+    s = a+ b + c
     print (f'A soma vale {s}')
 
 

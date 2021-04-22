@@ -1,0 +1,39 @@
+Git -> Software de controle de versão
+GitHub -> Plataforma de Rede Social para Programadores
+
+Git: Versionamento = versão
+Primeiro código de versionamento surgiu em 1972.
+
+
+commit: versionamento local ---->>> push: -> repositorio remoto
+
+
+Versionamento (VSC)
+
+CENTRALIZADO/LINEAR:
+-> CA Software Change Manager (CCC)
+-> Source Code Control System (SCCS)
+-> Panvalet
+-> Concurrent Version System (CVS)
+-> Apache Subversion (SVN)
+-> ClearCase
+-> Visual SourceSafe
+-> Perforce
+
+DISTRIBUÍDO:
+-> Mercurial *
+-> Bazaar *
+-> Code Co-op *
+-> GNU arch *
+-> Monotone *
+-> Fossil *
+-> BitKeeper
+-> Git
+
+PRINCIPAIS VANTAGENS:
+
+-> Controle de histórico
+-> Trabalho em equipe
+-> Ramificações do projeto
+-> Segurança
+-> Organização
