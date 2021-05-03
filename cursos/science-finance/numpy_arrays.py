@@ -74,3 +74,4 @@ print(matriz.shape)
 print(matriz.reshape(5,5))
 matriz = (matriz.reshape(5,5))
 print (matriz.shape)
+
