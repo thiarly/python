@@ -65,7 +65,3 @@ print (f'TIR = R$ {tir:.2%}')
 
 
 
-
-
-# print(npf.pv(0.05, 5, 0, 10_000))
-
