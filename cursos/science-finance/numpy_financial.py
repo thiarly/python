@@ -19,8 +19,6 @@ n = 12 # Meses
 #pv = npf.pv(i, n, 0, fv=0)
 
 
-import numpy_financial as npf
-print(npf.pv(0.05, 5, 0, 10_000))
 
 
 
