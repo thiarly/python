@@ -1,4 +1,4 @@
-import numpy_financial as npf
+#import numpy_financial as npf
 
 # Valor presente
 # Se uma pessoa deseja obter R$ 20.000,00 dentro de um ano, quanto deverá ela depositar na poupança que rende 0,2% de juros composto ao mês?
@@ -16,7 +16,14 @@ n = 12 # Meses
 """
 #print(npf.pv(0.05, 5, 0, 10_000))
 
-npf.irr([-250000, 100000, 150000, 200000, 250000, 300000])
+#pv = npf.pv(i, n, 0, fv=0)
+
+
+import numpy_financial as npf
+print(npf.pv(0.05, 5, 0, 10_000))
+
+
+
 
 
 
