@@ -46,3 +46,4 @@ collinh = vale3.loc[['2020-10-15', '2020-10-19']] [['Open', 'Close']]
 print (collinh)
 
 #####
+#

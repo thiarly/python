@@ -20,3 +20,4 @@ print (vale3.head())
 
 ### Exibindo as ultimas 5 linhas
 print (vale3.tail())
+#

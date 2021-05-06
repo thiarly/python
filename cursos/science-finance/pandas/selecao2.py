@@ -86,3 +86,4 @@ linhazso = vale3.iloc[[0,6,8]]
 # Selecionando a primeira e segunda coluna
 psc = vale3.iloc [:, :3] # :, -> referente a todas as linhas. :2 Referente a primeira e segunda coluna
 print (psc)
+#

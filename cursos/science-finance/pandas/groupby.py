@@ -6,3 +6,4 @@ dados = {'produto':['TV','TV','sofa', 'sofa', 'geladeira', 'geladeira'],
 
 df = (pd.DataFrame(dados))
 print(df)
+#
