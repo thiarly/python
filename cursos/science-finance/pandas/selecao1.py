@@ -44,3 +44,5 @@ out1519 = vale3.loc[['2020-10-15', '2020-10-19']]
 ### Selecionando precos de abertura e fechamento dos dias 15/10/2020 e 19/10/2020
 collinh = vale3.loc[['2020-10-15', '2020-10-19']] [['Open', 'Close']]
 print (collinh)
+
+#####
