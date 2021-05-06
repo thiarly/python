@@ -6,6 +6,7 @@ pandas.paydata.org
 
 #### Obtendo as cotações da VALE3 através de um arquivo CSV remoto
 import pandas as pd
+
 vale3 = pd.read_csv('https://raw.githubusercontent.com/codigoquant/data/main/VALE3.csv', index_col=0)
 #print (vale3)
 
