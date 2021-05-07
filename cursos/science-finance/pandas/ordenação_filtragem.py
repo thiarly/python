@@ -25,9 +25,6 @@ filtro = empresas ['Liq.2meses'] > 1000000000
 # 6. Listar as 5 empresas com maior ROIC
 #print(empresas.sort_values('ROIC', ascending=False)[:5])
 
-
-
-
 # 7. Listar as 5 empresas com menor EV/EBIT, excluindo EV/EBIT negativo
 #print (empresas[empresas['EV/EBIT'] > 0].sort_values('EV/EBIT')[:5])
 
@@ -37,17 +34,15 @@ filtro = empresas ['Liq.2meses'] > 1000000000
 # 8. Listar as 5 empresas com maior EV/EBIT, excluindo EV/EBIT negativo
 #print (empresas[empresas['EV/EBIT'] > 0].sort_values('EV/EBIT', ascending=False)[:5])
 
-
-
 # 9. Colunas Papel e P/L das 10 empresas com menor P/L nao negativo, e com Liq. 2 meses entre R$ 1 mi e R$ 10 mi
 
 #fil = (empresas['Liq.2meses'] > 1000000) &  (empresas['Liq.2meses'] < 10000000) & (empresas['P/L'] > 0)
 #(empresas.sort_values('P/L',ascending=False))
 
-fil = empresas[(empresas['Liq.2meses'] > 1000000) &  (empresas['Liq.2meses'] < 10000000) & (empresas['P/L'] > 0)] empresas.sorte_values('P/L')[:10])
+fil = empresas[(empresas['Liq.2meses'] > 1000000) &  (empresas['Liq.2meses'] < 10000000) & (empresas['P/L'] > 0)]
+
 #empresas.sort_values('P/L')[:10]
-
-
+#empresas.sorte_values('P/L')[:10]
 print (empresas[fil])
 
 
