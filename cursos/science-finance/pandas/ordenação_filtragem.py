@@ -36,10 +36,10 @@ filtro = empresas ['Liq.2meses'] > 1000000000
 
 # 9. Colunas Papel e P/L das 10 empresas com menor P/L nao negativo, e com Liq. 2 meses entre R$ 1 mi e R$ 10 mi
 
-#fil = (empresas['Liq.2meses'] > 1000000) &  (empresas['Liq.2meses'] < 10000000) & (empresas['P/L'] > 0)
+fil = (empresas['Liq.2meses'] > 1000000) &  (empresas['Liq.2meses'] < 10000000) & (empresas['P/L'] > 0)
 #(empresas.sort_values('P/L',ascending=False))
 
-fil = empresas[(empresas['Liq.2meses'] > 1000000) &  (empresas['Liq.2meses'] < 10000000) & (empresas['P/L'] > 0)]
+#print (empresas['Liq.2meses'] > 1000000) &  (empresas['Liq.2meses'] < 10000000) & (empresas['P/L'] > 0)
 
 #empresas.sort_values('P/L')[:10]
 #empresas.sorte_values('P/L')[:10]
