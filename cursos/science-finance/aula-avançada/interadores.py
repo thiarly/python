@@ -28,6 +28,16 @@ for val in filter(filtro, range(10)):
 print()
 
 # itertools
+## itera sobre todas as permutações de uma sequência
 from itertools import permutations
 p = permutations('LUZ')
+print(*p)
+
+# itera sobre todas as combinações dentro de uma lista sem repetir
+from itertools import combinations
+c = combinations ('LUZ', 2)
+print(*c)
+
+from itertools import product
+p = product('ab', range(3))
 print(*p)
